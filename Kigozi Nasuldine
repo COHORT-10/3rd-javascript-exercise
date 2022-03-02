@@ -1,0 +1,92 @@
+function car(color, brandName, engineOil, capacity) {
+    this.color = color;
+    this.brandName = brandName;
+    this.engineOil = engineOil
+    this.capacity = capacity;
+    
+    this.sound = function () {
+        return "the car honcks"
+    };
+    
+}
+
+let car1 = new car("Green", "Toyota", "Synthetic", "Manual", "50-seater")
+let car2  = new car("Blue", "Actros", "SemiSynthetic", "Manual", "4-seater")
+
+console.log(car1);
+console.log(car2);
+
+console.log(car1.sound());
+
+//2
+//defining a class called 
+//and expects those values in the brackets are parameters
+function computer(color, brandName, storage, ram, ) {
+//this keyword is used to create the properties of the class
+    this.color = color;
+    this.brandName = brandName;
+    this.storage = storage;
+    this.screen = ram;
+  
+}
+// the new word is a constructor 
+// a constructor is used to initialize objects 
+//key problem is function anonymus
+// why not car 1 instead of car some applies for all classes as per now
+let computer1 = new computer("black", "dell", "200gb", "4gb", "1050ti")
+let computer2 = new computer("white", "lenovo", "512gb", "8gb", "1060ti")
+
+console.log(computer1);
+console.log(computer2);
+console.log(computer3);
+
+//3
+function team(teamName, stadium, country, league) {
+   
+    this.teamName = teamName;
+    this.stadium = stadium;
+    this.country = country;
+    this.league = league;
+
+    };
+    
+let team1 = new team("red", "lakers", "la", "Chicago ", "nba")
+let team2  = new team("white", "celtics", "boston", "cb")
+let team3  = new team("green ", "dodgers", "California ", "lasvegas", "cbn")
+
+
+console.log(team1,team2,team3);
+
+//4
+function phone(color, brandName, storage, simCard, camera) {
+    this.color = color;
+    this.brandName = brandName;
+    this.storage = storage;
+    this.simCard = simCard;
+    this.camera = camera;
+    
+}
+
+let ipad1 = new ipad("sieraBlue", "iphone13", "64gb", "singleSim", "12px")
+let ipad2  = new ipad("purple", "s10", "128gb", "dualsim", "16px")
+let ipad3  = new ipas("White", "vivoX70", "256gb", "dualsim", "40px")
+
+console.log(ipad1,ipad2,ipad3);
+
+
+//5
+
+function shoe(color, brandName, size, type, texture) {
+    this.color = color;
+    this.brandName = brandName;
+    this.size = size;
+    this.type = type;
+    this.texture = texture;
+    
+}
+
+let boot1 = new shoe("black", "catapilar", "twelve", "sandals", "swede")
+let boot2 = new shoe("brown", "timberLand", "seven", "hightops", "leather")
+let boot3  = new shoe("blue", "gucci", "eight", "gentle ", "cloth")
+
+console.log(boot1,boot2,boot3);
